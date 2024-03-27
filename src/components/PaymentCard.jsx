@@ -1,4 +1,5 @@
 
+import PropTypes from 'prop-types';
 
 export default function PaymentCard({ payment: {amount, cardNumber, cardType, description, cardOwner, date, isPaid}}) {
     
@@ -21,3 +22,13 @@ export default function PaymentCard({ payment: {amount, cardNumber, cardType, de
     </div>
     )
 }
+
+PaymentCard.propTypes = {
+  amount: PropTypes.number.isRequired,
+  cardNumber: PropTypes.string.isRequired,
+  cardType: PropTypes.string.isRequired,
+  cardOwner: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  isPaid: PropTypes.bool,
+};
