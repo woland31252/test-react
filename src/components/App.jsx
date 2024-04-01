@@ -1,8 +1,9 @@
 
 import './App.css';
-import PaymentsList from './PaymentsList';
-import PageTitle from './PageTitle';
-import initialPaiments from '../payments.json'
+// import PaymentsList from './PaymentsList';
+// import PageTitle from './PageTitle';
+// import initialPaiments from '../payments.json'
+import Button from './Button/Button';
 
 //   const data1 = {
 //   "id": "1",
@@ -39,14 +40,8 @@ import initialPaiments from '../payments.json'
 // }
 
 function App() {
-
-  return (
-    <>
-      <PageTitle text="Payments" />
-      <PaymentsList payments={ initialPaiments} />
-      
-    </>
-  )
+  return (<Button message=" Playing music"/>)
+  
 }
 
 export default App
